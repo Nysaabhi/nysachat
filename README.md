@@ -410,7 +410,6 @@ body {
                 Nysa AI Assistant
             </div>
             <div class="chat-actions">
-                </button>
             </div>
         </div>
         <div class="chat-messages" id="chatMessages">
