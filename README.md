@@ -126,7 +126,7 @@
         /* Chatbot Styles */
         .chatbot-container {
             position: fixed;
-             margin: 0px;
+             margin-top: -50px;
             right: 20px;
             width: 380px;
             height: 600px;
@@ -553,4 +553,3 @@
         });
     </script>
 </body>
-</html>
