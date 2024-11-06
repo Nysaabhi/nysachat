@@ -80,79 +80,6 @@
             min-height: calc(100vh - 140px);
         }
 
-        /* Search Section */
-        .search-section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .search-container {
-            position: relative;
-            margin-top: 40px;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 16px 24px;
-            padding-right: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 30px;
-            color: var(--text-light);
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .search-button {
-            position: absolute;
-            right: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: var(--primary-color);
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-
-        /* Featured Categories */
-        .categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .category-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 215, 0, 0.1);
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 215, 0, 0.1);
-        }
-
-        .category-icon {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
         /* Bottom Navigation */
         .bottom-nav {
             position: fixed;
@@ -358,46 +285,6 @@
             </button>
         </div>
     </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Search Section -->
-        <section class="search-section">
-            <h1 style="background: var(--accent-gradient); -webkit-background-clip: text; color: transparent; font-size: 2.5em; margin-bottom: 20px;">
-                Discover the Web3 Universe
-            </h1>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search NFTs, DApps, or blockchain projects...">
-                <button class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </section>
-
-        <!-- Featured Categories -->
-        <section class="categories">
-            <div class="category-card">
-                <i class="fas fa-paint-brush category-icon"></i>
-                <h3>NFT Collections</h3>
-                <p>Explore unique digital art and collectibles</p>
-            </div>
-            <div class="category-card">
-                <i class="fas fa-cube category-icon"></i>
-                <h3>DeFi Protocols</h3>
-                <p>Discover decentralized finance platforms</p>
-            </div>
-            <div class="category-card">
-                <i class="fas fa-gamepad category-icon"></i>
-                <h3>GameFi</h3>
-                <p>Play-to-earn blockchain games</p>
-            </div>
-            <div class="category-card">
-                <i class="fas fa-code category-icon"></i>
-                <h3>Smart Contracts</h3>
-                <p>Verified contract addresses and audits</p>
-            </div>
-        </section>
-    </main>
 
     <!-- Chatbot -->
     <div class="chatbot-container">
