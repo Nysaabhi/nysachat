@@ -98,6 +98,10 @@ body {
 
 /* Chat Header */
 .chat-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 15px;
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(253, 185, 49, 0.1));
@@ -106,6 +110,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .chat-status {
@@ -127,7 +132,9 @@ body {
 
 /* Chat Messages */
 .chat-messages {
-    flex: 1;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    height: calc(100% - 130px);
     overflow-y: auto;
     padding: 20px;
     display: flex;
@@ -191,12 +198,18 @@ body {
 
 /* Chat Input */
 .chat-input-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 16px;
     border-top: 1px solid rgba(255, 215, 0, 0.1);
     display: flex;
     gap: 12px;
     align-items: center;
     background: rgba(26, 26, 31, 0.95);
+    border-radius: 0 0 20px 20px;
+    z-index: 2;
 }
 
 #chatInput {
@@ -324,15 +337,12 @@ body {
     }
 
     .chat-messages {
-        padding-bottom: 70px;
+        margin-bottom: 130px;
     }
 
     .chat-input-container {
-        position: fixed;
+        border-radius: 0;
         bottom: 60px;
-        left: 0;
-        right: 0;
-        padding: 12px;
     }
 
     .connect-wallet {
@@ -387,6 +397,11 @@ body {
     .bottom-nav {
         background: rgba(26, 26, 31, 0.98);
     }
+}
+
+/* Ensure proper spacing for messages near the bottom */
+.chat-messages .message:last-child {
+    margin-bottom: 10px;
 }
     </style>
 </head>
